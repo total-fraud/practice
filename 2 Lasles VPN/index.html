@@ -3,52 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Lasles VPN</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo"></div>
+      <div class="logo-wrap"><a href="" class="logo"></a></div>
       <ul class="menu">
-        <li class="menu-item">About</li>
-        <li class="menu-item">Features</li>
-        <li class="menu-item">Pricing</li>
-        <li class="menu-item">Testimonials</li>
-        <li class="menu-item">Help</li>
+        <li class="menu-item"><a href="" class="menu-link">About</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Features</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Pricing</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Testimonials</a></li>
+        <li class="menu-item"><a href="" class="menu-link">Help</a></li>
       </ul>
       <div class="sign">
         <div class="sign-in">Sign In</div>
         <div class="sign-up">Sign Up</div>
       </div>
     </header>
-    <section class="head">
+    <section class="main-banner">
       <div class="greeting">
-        <div class="greeting__text">
-          <h1 class="greeting__header">Want anything to be easy with LaslesVPN.</h1>
-          Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
-          <a href="" class="greeting__start-link">Get Started</a>
+        <div class="greeting__info rubik-regular">
+          <h1 class="greeting__header">Want anything to be<br> easy with <span class="rubik-bold">LaslesVPN.</span></h1>
+          <div class="greeting__text"> Provide a network for all your needs with ease and fun using <span class="rubik-medium">LaslesVPN</span> discover interesting features from us.</div>
+          <a href="" class="greeting__start-link rubik-bold">Get Started</a>
         </div>
         <div class="greeting__pic"></div>
       </div>
       <div class="amount">
         <ul class="amount-list">
         <li class="amount-item">
-          <div class="amount-item__icon"></div>
-          <div class="amount-item__text"></div>
+          <div class="amount-item__icon icon-users"></div>
+          <div class="amount-item__info rubik-bold">90+<br><span class="amount-item__text rubik-regular"> Users</span></div>
       </li>
       <li class="amount-item">
-          <div class="amount-item__icon"></div>
-          <div class="amount-item__text"></div>
+          <div class="amount-item__icon icon-locations"></div>
+          <div class="amount-item__info rubik-bold">30+<br><span class="amount-item__text rubik-regular"> Locations</span></div>
       </li>
       <li class="amount-item">
-          <div class="amount-item__icon"></div>
-          <div class="amount-item__text"></div>
-      </li></ul></div>
+          <div class="amount-item__icon icon-servers"></div>
+          <div class="amount-item__info rubik-bold">50+<br><span class="amount-item__text rubik-regular"> Servers</span></div>
+      </li></ul>
+    </div>
       <div class="features">
           <div class="features__pic"></div>
-          <div class="features__text">
-              <h2 class="features__header">We Provide Many Features You Can Use</h2>
-              <div class="features__info">You can explore the features that we provide with fun and have their own functions each feature.</div>
-          <ul class="features-list">
+          <div class="features__info">
+              <h2 class="features__header rubik-medium">We Provide Many Features You Can Use</h2>
+              <div class="features__text rubik-regular">You can explore the features that we provide with fun and have their own functions each feature.</div>
+          <ul class="features-list rubik-regular">
             <li class="features-item">Powerfull online protection.</li>
             <li class="features-item">Internet without borders.</li>
             <li class="features-item">Supercharged VPN</li>
@@ -58,28 +60,30 @@
       </div>
     </section>
     <section class="about">
-            <h2 class="plan__header">Choose Your Plan</h2>
-            <div class="plan__info">Let's choose the package that is best for you and explore it happily and cheerfully.</div>
+      <div class="gradient">
+        <div class="plan">
+            <h2 class="plan__header rubik-medium">Choose Your Plan</h2>
+            <div class="plan__text rubik-regular">Let's choose the package that is best for you and explore it happily and cheerfully.</div>
             <div class="rate">
                 <div class="rate__item">
-                  <div class="rate__pic"></div>
-                  <div class="rate__name">Free Plan</div>
+                  <div class="rate__pic rate-free"></div>
+                  <div class="rate__name rubik-medium">Free Plan</div>
                   <div class="rate__pros">
-                    <ul class="pros-list">
+                    <ul class="pros-list rubik-regular">
                       <li class="pros-item">Unlimited Bandwitch</li>
                       <li class="pros-item">Encrypted Connection</li>
                       <li class="pros-item">Yes Traffic Logs</li>
                       <li class="pros-item">Works on All Devices</li>
                     </ul>
                   </div>
-                  <div class="rate__price"></div>
-                  <div class="rate__select"></div>
+                  <div class="rate__price rubik-medium">Free</div>
+                  <button class="rate__select rubik-bold">Select</button>
                 </div>
                 <div class="rate__item">
-                  <div class="rate__pic"></div>
-                  <div class="rate__name">Standard Plan</div>
+                  <div class="rate__pic rate-standard"></div>
+                  <div class="rate__name rubik-medium">Standard Plan</div>
                   <div class="rate__pros">
-                    <ul class="pros-list">
+                    <ul class="pros-list rubik-regular">
                       <li class="pros-item">Unlimited Bandwitch</li>
                       <li class="pros-item">Encrypted Connection</li>
                       <li class="pros-item">Yes Traffic Logs</li>
@@ -87,14 +91,14 @@
                       <li class="pros-item">Connect Anyware</li>
                     </ul>
                   </div>
-                  <div class="rate__price"></div>
-                  <div class="rate__select"></div>
+                  <div class="rate__price rubik-medium">$9<span class="price-words rubik-regular"> / mo</span></div>
+                  <button class="rate__select rubik-bold">Select</button>
                 </div>
                 <div class="rate__item">
-                  <div class="rate__pic"></div>
-                  <div class="rate__name">Premium Plan</div>
+                  <div class="rate__pic rate-premium"></div>
+                  <div class="rate__name rubik-medium">Premium Plan</div>
                   <div class="rate__pros">
-                    <ul class="pros-list">
+                    <ul class="pros-list rubik-regular">
                     <li class="pros-item">Unlimited Bandwitch</li>
                     <li class="pros-item">Encrypted Connection</li>
                     <li class="pros-item">Yes Traffic Logs</li>
@@ -103,26 +107,28 @@
                     <li class="pros-item">Get New Features</li>
                   </ul>
                 </div>
-                  <div class="rate__price"></div>
-                  <button class="rate__select"></button>
+                  <div class="rate__price rubik-medium">$12<span class="price-words rubik-regular"> / mo</span></div>
+                  <button class="rate__select rubik-bold">Select</button>
                 </div>
             </div>
-        </div>
+          </div>
         <div class="world">
           <h2 class="world__header">Huge Global Network of Fast VPN</h2>
           <div class="world__text">See LaslesVPN everywhere to make it easier for you when you move locations.</div>
           <div class="world__map"></div>
-
-          <div class="companies">
-            <ul class="companies-list">
-              <li class="companies-item"></li>
-              <li class="companies-item"></li>
-              <li class="companies-item"></li>
-              <li class="companies-item"></li>
-              <li class="companies-item"></li>
-            </ul>
-          </div>
         </div>
+      </div>
+    </div>
+        <div class="companies">
+          <ul class="companies-list">
+            <li class="companies-item"></li>
+            <li class="companies-item"></li>
+            <li class="companies-item"></li>
+            <li class="companies-item"></li>
+            <li class="companies-item"></li>
+          </ul>
+        </div>
+      </section>
         <div class="reviews">
           <h2 class="reviews__header">Trusted by Thousands of Happy Customer</h2>
           <div class="reviews__text">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</div>
@@ -136,16 +142,15 @@
               <li class="carousel-item"></li>
             </ul></div>
 <button class="prev"></button><button class="next"></button>
-
-
           </div>
         </div>
+
         <div class="subscribe">
           <h2 class="subscribe__header">Subscribe Now for Get Special Features!</h2>
           <div class="subscribe__text">Let's subscribe with us and find the fun.</div>
           <button class="subcribe-btn">Subscribe Now</button>
         </div>
-    </section>
+   
     <footer class="footer">
       <div class="footer-soc">
         <div class="footer-logo"></div>
