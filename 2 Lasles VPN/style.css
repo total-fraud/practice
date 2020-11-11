@@ -119,8 +119,8 @@ body {
 }
 
 .sign-up:hover,
-:focus,
-:active {
+.sign-up:focus,
+.sign-up:active {
   color: #ffffff;
   background-color: #f53855;
   box-shadow: 0px 28px 18px -12px rgba(245, 56, 56, 0.56);
@@ -285,9 +285,6 @@ body {
   left: -30px;
 }
 
-.about {
-}
-
 .gradient {
   padding: 0 150px;
   background: linear-gradient(
@@ -299,6 +296,7 @@ body {
 
 .plan {
   padding-top: 80px;
+  margin-bottom: 150px;
 }
 
 .plan__header {
@@ -333,6 +331,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.2s;
+}
+
+.rate__item:hover,
+.rate__item:focus,
+.rate__item:active {
+  transition: 0.2s;
+  border: 2px solid #f53838;
 }
 
 .rate__name {
@@ -426,4 +432,220 @@ body {
   background-color: #f53855;
   box-shadow: 0px 28px 18px -12px rgba(245, 56, 56, 0.56);
   transition: 0.2s;
+}
+
+.world {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+.world__header {
+  max-width: 383px;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: #0b132a;
+  margin-bottom: 25px;
+}
+
+.world__text {
+  max-width: 555px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 150px;
+}
+
+.world__map {
+  width: 1060px;
+  height: 539px;
+  position: relative;
+  background-image: url(./img/map.png);
+}
+
+.map-point {
+  background-image: url(./img/Icon/map-point.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  position: absolute;
+}
+
+.russia {
+  top: 25%;
+  left: 62%;
+}
+
+.korea {
+  top: 37%;
+  left: 82%;
+}
+
+.japan {
+  top: 38%;
+  left: 85%;
+}
+
+.china {
+  top: 32%;
+  left: 79%;
+}
+
+.usa {
+  top: 38%;
+  left: 24%;
+}
+
+.england {
+  top: 26%;
+  left: 46%;
+}
+
+.australia {
+  top: 82%;
+  left: 87%;
+}
+
+.brazil {
+  top: 74%;
+  left: 34%;
+}
+
+.canada {
+  top: 29%;
+  left: 13%;
+}
+
+.kazahstan {
+  top: 33%;
+  left: 67%;
+}
+
+.france {
+  top: 31%;
+  left: 47%;
+}
+
+.germany {
+  top: 28%;
+  left: 49%;
+}
+
+.uar {
+  top: 79%;
+  left: 53%;
+}
+
+.mexico {
+  top: 45%;
+  left: 18%;
+}
+
+.turkey {
+  top: 36%;
+  left: 56%;
+}
+
+.sweden {
+  top: 20%;
+  left: 50%;
+}
+
+.india {
+  top: 53%;
+  left: 68%;
+}
+
+.companies {
+  margin-bottom: 150px;
+}
+
+.companies-list {
+  margin: 0 150px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies-item {
+  background-repeat: no-repeat;
+  height: 113px;
+  width: 201px;
+  margin-right: 20px;
+  background-size: contain;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.companies-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.netflix {
+  background-image: url(./img/companies/netflix.png);
+}
+
+.github {
+  background-image: url(./img/companies/github.png);
+}
+
+.amazon {
+  background-image: url(./img/companies/amazon.png);
+}
+
+.discord {
+  background-image: url(./img/companies/discord.png);
+}
+
+.spotify {
+  background-image: url(./img/companies/spotify.png);
+}
+
+.carousel__track {
+  height: 350px;
+  margin-left: 150px;
+}
+
+.profile {
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  width: 400px;
+  height: 230px;
+}
+.profile__info {
+  display: flex;
+}
+
+.profile__pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(./img/profiles/viezh.png);
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__header {
+  font-size: 35px;
+  line-height: 50px;
+  max-width: 448px;
+  color: #0b132a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews__text {
+  max-width: 555px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #4f5665;
+  margin-bottom: 60px;
 }
