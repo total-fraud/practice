@@ -427,7 +427,7 @@ body {
 }
 
 .rate__select:hover,
-:focus {
+.rate__select:focus {
   color: #ffffff;
   background-color: #f53855;
   box-shadow: 0px 28px 18px -12px rgba(245, 56, 56, 0.56);
@@ -438,7 +438,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
 }
 
 .world__header {
@@ -454,7 +454,7 @@ body {
   max-width: 555px;
   text-align: center;
   line-height: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .world__map {
@@ -604,28 +604,6 @@ body {
   background-image: url(./img/companies/spotify.png);
 }
 
-.carousel__track {
-  height: 350px;
-  margin-left: 150px;
-}
-
-.profile {
-  border: 2px solid #dddddd;
-  border-radius: 10px;
-  width: 400px;
-  height: 230px;
-}
-.profile__info {
-  display: flex;
-}
-
-.profile__pic {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-image: url(./img/profiles/viezh.png);
-}
-
 .reviews {
   display: flex;
   flex-direction: column;
@@ -641,11 +619,118 @@ body {
   margin-bottom: 20px;
 }
 
-.reviews__text {
+.reviews__info {
   max-width: 555px;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
   color: #4f5665;
   margin-bottom: 60px;
+}
+
+.profile {
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  width: 400px;
+  height: 230px;
+}
+.profile__info {
+  display: flex;
+  padding: 30px 30px 10px 30px;
+}
+
+.profile__pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-image: url(./img/profiles/viezh.png);
+}
+
+.profile__name {
+  font-size: 18px;
+
+  color: #0b132a;
+}
+
+.profile__location {
+  font-size: 14px;
+  color: #4f5665;
+}
+
+.profile__rating {
+  padding-top: 7px;
+  font-size: 16px;
+  color: #0b132a;
+  margin-left: auto;
+  position: relative;
+  padding-right: 15px;
+}
+
+.profile__rating::after {
+  content: url(./img/Icon/star-rating.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+
+.review {
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.carousel {
+  align-self: flex-end;
+}
+
+.carousel__track {
+  height: 350px;
+  margin-left: 150px;
+}
+
+.carousel-list {
+  display: flex;
+  list-style: none;
+  width: 1200px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  cursor: grabbing;
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.carousel-item:last-of-type {
+  margin-right: 0;
+}
+
+.carousel-btns {
+  margin-left: auto;
+  width: 140px;
+  height: 60px;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.next {
+  transform: rotate(180deg);
+}
+
+button:focus {
+  outline: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border: 2px solid #f53838;
 }
