@@ -29,6 +29,7 @@
 body {
   background-color: #ffffff;
   color: #4f5665;
+  margin: 0 auto;
 }
 
 .rubik-bold {
@@ -683,22 +684,28 @@ body {
 
 .carousel {
   align-self: flex-end;
+
+  margin-left: 40%;
 }
 
 .carousel__track {
+  width: 100vw;
   height: 350px;
-  margin-left: 150px;
-}
-
-.carousel-list {
-  display: flex;
-  list-style: none;
-  width: 1200px;
   overflow: hidden;
 }
 
+.carousel-list {
+  margin-left: 150px;
+  transition: 1.5s;
+  display: flex;
+  list-style: none;
+  width: 1200px;
+}
+.carousel-item:first-of-type {
+  margin-left: 25vw;
+}
+
 .carousel-item {
-  cursor: grabbing;
   margin-right: 50px;
   flex-shrink: 0;
 }
@@ -709,6 +716,7 @@ body {
 
 .carousel-btns {
   margin-left: auto;
+  margin-right: 150px;
   width: 140px;
   height: 60px;
 }
@@ -724,6 +732,14 @@ body {
 button:focus {
   outline: none;
 }
+
+button:disabled {
+  background-color: #f53838;
+}
+button svg:disabled {
+  fill: #ffffff;
+}
+
 .prev,
 .next {
   cursor: pointer;
