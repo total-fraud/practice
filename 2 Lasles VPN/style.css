@@ -719,6 +719,7 @@ body {
   margin-right: 150px;
   width: 140px;
   height: 60px;
+  margin-bottom: 65px;
 }
 
 .prev {
@@ -749,4 +750,128 @@ button svg:disabled {
   height: 60px;
   background-color: #ffffff;
   border: 2px solid #f53838;
+}
+
+.subscribe-container {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(248, 248, 248, 1) 42%
+  );
+  padding-bottom: 65px;
+}
+
+.subscribe {
+  height: 233px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  padding: 0 70px;
+}
+.subscribe__header {
+  max-width: 370px;
+  font-size: 35px;
+  line-height: 45px;
+  color: #0b132a;
+}
+
+.subscribe__text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.subcribe-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 60px;
+  background: #f53838;
+  box-shadow: 0px 28px 18px -12px rgba(245, 56, 56, 0.56);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.subcribe-btn:active {
+  transform: translateY(1px);
+}
+
+.footer-container {
+  background: #f8f8f8;
+}
+
+.footer {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-soc {
+  width: 340px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer-descr {
+  margin-bottom: 30px;
+}
+
+.footer-soc__btn {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-soc__btn:last-of-type {
+  margin-right: 0;
+}
+
+.footer-soc__btns {
+  margin-bottom: 30px;
+}
+
+.logo-trademark {
+  font-size: 16px;
+  line-height: 30px;
+  color: #afb5c0;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.link-list {
+  width: 125px;
+  list-style: none;
+  margin-right: 100px;
+}
+
+.link-list:last-of-type {
+  margin-right: 0;
+}
+
+.link-item__header {
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+  text-decoration: none;
 }
