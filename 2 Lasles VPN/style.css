@@ -466,12 +466,13 @@ body {
 }
 
 .map-point {
-  background-image: url(./img/Icon/map-point.png);
+  background-image: url(./img/Icon/map-point.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   background-size: cover;
   position: absolute;
+  transition: 1s;
 }
 
 .russia {
