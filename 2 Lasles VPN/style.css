@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Rubik Regular";
   font-style: normal;
@@ -29,7 +33,6 @@
 body {
   background-color: #ffffff;
   color: #4f5665;
-  margin: 0 auto;
 }
 
 .rubik-bold {
@@ -51,13 +54,23 @@ body {
   font-weight: 400;
 }
 
-.header {
+.header-container {
+  background-color: #ffffff;
   position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.header {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 25px 150px;
+  padding: 20px 0;
+  min-height: 40px;
+  max-width: 1280px;
   line-height: 35px;
   white-space: nowrap;
+  transition: 0.5s;
 }
 
 .logo-wrap {
@@ -78,7 +91,7 @@ body {
 
 .menu-item {
   padding-right: 40px;
-  transition: 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-link {
@@ -129,9 +142,9 @@ body {
 }
 
 .greeting {
+  margin: 0 auto;
   margin-top: 70px;
-  margin-left: 145px;
-  max-width: 1600px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -181,7 +194,8 @@ body {
 }
 
 .amount {
-  margin: 0 125px;
+  margin: 0 auto;
+  max-width: 1280px;
   height: 200px;
   border-radius: 10px;
   box-shadow: 0px 17px 19px 8px rgba(129, 94, 94, 0.1);
@@ -230,11 +244,12 @@ body {
 }
 
 .features {
-  margin: 0 150px;
+  margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 132px;
+  max-width: 1280px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .features__pic {
@@ -296,6 +311,8 @@ body {
 }
 
 .plan {
+  margin: 0 auto;
+  max-width: 1280px;
   padding-top: 80px;
   margin-bottom: 150px;
 }
@@ -436,6 +453,8 @@ body {
 }
 
 .world {
+  margin: 0 auto;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -458,11 +477,12 @@ body {
   margin-bottom: 50px;
 }
 
-.world__map {
+.map {
   width: 1060px;
   height: 539px;
   position: relative;
   background-image: url(./img/map.png);
+  background-size: contain;
 }
 
 .map-point {
@@ -561,11 +581,13 @@ body {
 }
 
 .companies {
+  margin: 0 auto;
+  max-width: 1280px;
   margin-bottom: 150px;
 }
 
 .companies-list {
-  margin: 0 150px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -765,10 +787,10 @@ button svg:disabled {
 .subscribe {
   height: 233px;
   margin: 0 auto;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1140px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
@@ -809,9 +831,9 @@ button svg:disabled {
 }
 
 .footer {
-  margin: 0 auto;
   padding-bottom: 50px;
-  max-width: 1140px;
+  margin: 0 auto;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
 }

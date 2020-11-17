@@ -1,3 +1,13 @@
+// header shrink with scroll
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 120) {
+        document.querySelector(".header").style.padding = "10px 0";
+    } else if (document.documentElement.scrollTop == 0) {
+        document.querySelector(".header").style.padding = "20px 0";
+    }
+}
+
 //slider part
 
 let prev = document.querySelector('.prev'),
