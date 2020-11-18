@@ -2,9 +2,9 @@
 
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 120) {
-        document.querySelector(".header").style.padding = "10px 0";
+        document.querySelector(".header").style.padding = "10px 20px";
     } else if (document.documentElement.scrollTop == 0) {
-        document.querySelector(".header").style.padding = "20px 0";
+        document.querySelector(".header").style.padding = "20px 20px";
     }
 }
 
@@ -15,9 +15,9 @@ let prev = document.querySelector('.prev'),
     list = document.querySelector('.carousel-list'),
     items = document.querySelectorAll('.carousel-item'),
     itemsCount = items.length,
-    slidesToScroll = 2,
-    slidesToShow = 3,
-    itemWidth = 400,
+    slidesToScroll = 1,
+    slidesToShow = 2,
+    itemWidth = 470,
     movePosition = slidesToScroll * itemWidth,
     position = 0
 
@@ -38,7 +38,7 @@ const setPosition = () => {
 }
 const checkBtns = () => {
     prev.disabled = position === 0;
-    next.disabled = position <= -(itemsCount - slidesToShow) * (itemWidth + 15);
+    next.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
 };
 checkBtns();
 
@@ -52,6 +52,6 @@ setInterval(() => {
     transformedPoint.style.transform = "scale(2, 2)";
     setTimeout(() => {
         transformedPoint.style.transform = "scale(1, 1)";
-    }, 1000)
+    }, 500)
 
 }, 2500);
